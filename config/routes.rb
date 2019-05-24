@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+  resources :works
+  resources :contacts
+  resources :products
+  resources :abouts
+  resources :homes
+  resources :tests
   # This line mounts Solidus's routes at the root of your application.
   # This means, any requests to URLs such as /products, will go to Spree::ProductsController.
   # If you would like to change where this engine is mounted, simply change the :at option to something different.
