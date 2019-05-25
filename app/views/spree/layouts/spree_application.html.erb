@@ -11,20 +11,6 @@
 
     <div class="container">
 
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul id="main-nav-bar" class="inline" data-hook>
-            <li id="home-link" data-hook><%= link_to "Home", spree.root_path, class: "nav-link js-scroll-trigger" %></li>
-            <li id="about-link" data-hook><%= link_to "About", spree.root_path, class: "nav-link js-scroll-trigger" %></li>
-
-          </ul>
-        </div>
-      </nav>
-
-    </div>
-
-    <div class="container">
-
       <%= render partial: 'spree/shared/header' %>
 
       <div id="wrapper" class="row" data-hook>
@@ -44,6 +30,7 @@
 
       <%= render partial: 'spree/shared/footer' %>
 
+    </div>
 
   </body>
 </html>
