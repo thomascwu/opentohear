@@ -1,27 +1,9 @@
-<p id="notice"><%= notice %></p>
+<header class="masthead">
+  <div class="container d-flex h-100 align-items-center">
+    <div class="mx-auto text-center">
+      <h1 class="mx-auto my-0 text-uppercase">Built with Passion</h1>
+      <h2 class="text-white-50 mx-auto mt-2 mb-5">Open to Hear is a start up company specializing in OTC hearing aid products.</h2>
+    </div>
+  </div>
+</header>
 
-<h1>Abouts</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @abouts.each do |about| %>
-      <tr>
-        <td><%= about.name %></td>
-        <td><%= link_to 'Show', about %></td>
-        <td><%= link_to 'Edit', edit_about_path(about) %></td>
-        <td><%= link_to 'Destroy', about, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New About', new_about_path %>

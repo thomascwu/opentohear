@@ -8,7 +8,7 @@ Spree.config do |config|
   config.currency = "USD"
 
   # from address for transactional emails
-  config.mails_from = "store@example.com"
+  config.mails_from = "admin@opentohear.com"
 
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
@@ -26,6 +26,7 @@ Spree.config do |config|
 
   # Template to use when rendering layout
   # config.layout = "spree/layouts/spree_application"
+  config.layout = 'application'
 
 
   # Admin:
