@@ -9,4 +9,6 @@
 //= require spree
 //= require rails-ujs
 //= require spree/frontend
+//= require activestorage
+//= require turbolinks
 //= require_tree .
