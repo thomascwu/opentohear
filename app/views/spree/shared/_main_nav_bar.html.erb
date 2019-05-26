@@ -1,11 +1,11 @@
 <nav class="columns sixteen">
   <ul id="main-nav-bar" class="inline" data-hook>
-    <li id="home-link" data-hook><%= link_to t('spree.home'), spree.root_path %></li>
-    <li id="about-link" data-hook><%= link_to "About", spree.cart_path %></li>
-    <li id="tests-link" data-hook><%= link_to "Hearing Test", spree.root_path %></li>
-    <li id="solutions-link" data-hook><%= link_to "Hearing Aid Solutions", spree.root_path %></li>
-    <li id="works-link" data-hook><%= link_to "How it works", spree.root_path %></li>
-    <li id="contacts-link" data-hook><%= link_to "Contact us", spree.root_path %></li>
+    <li id="home-link" data-hook><%= link_to "Home", spree.root_path %></li>
+    <li id="about-link" data-hook><%= link_to "About", '/spree/abouts#index'  %></li>
+    <li id="tests-link" data-hook><%= link_to "Hearing Test", '/spree/tests#index' %></li>
+    <li id="solutions-link" data-hook><%= link_to "Hearing Aid Solutions", '/spree/solutions#index' %></li>
+    <li id="works-link" data-hook><%= link_to "How it works", '/spree/works#index' %></li>
+    <li id="contacts-link" data-hook><%= link_to "Contact us", '/spree/contacts#index' %></li>
     <li id="link-to-cart" data-hook>
       <noscript>
         <%= link_to t('spree.cart'), spree.cart_path %>

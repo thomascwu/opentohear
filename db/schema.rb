@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_25_004754) do
+ActiveRecord::Schema.define(version: 2019_05_26_010453) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -75,6 +75,12 @@ ActiveRecord::Schema.define(version: 2019_05_25_004754) do
 
   create_table "solutions", force: :cascade do |t|
     t.text "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "spree_abouts", force: :cascade do |t|
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -179,6 +185,12 @@ ActiveRecord::Schema.define(version: 2019_05_25_004754) do
     t.index ["stock_location_id"], name: "index_spree_cartons_on_stock_location_id"
   end
 
+  create_table "spree_contacts", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "spree_countries", id: :serial, force: :cascade do |t|
     t.string "iso_name"
     t.string "iso"
@@ -214,6 +226,12 @@ ActiveRecord::Schema.define(version: 2019_05_25_004754) do
     t.integer "stock_location_id"
     t.datetime "created_at", precision: 6
     t.datetime "updated_at", precision: 6
+  end
+
+  create_table "spree_hears", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "spree_inventory_units", id: :serial, force: :cascade do |t|
@@ -840,6 +858,12 @@ ActiveRecord::Schema.define(version: 2019_05_25_004754) do
     t.index ["shipment_id", "shipping_method_id"], name: "spree_shipping_rates_join_index", unique: true
   end
 
+  create_table "spree_solutions", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "spree_state_changes", id: :serial, force: :cascade do |t|
     t.string "name"
     t.string "previous_state"
@@ -1080,6 +1104,12 @@ ActiveRecord::Schema.define(version: 2019_05_25_004754) do
     t.index ["taxonomy_id"], name: "index_taxons_on_taxonomy_id"
   end
 
+  create_table "spree_tests", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "spree_unit_cancels", id: :serial, force: :cascade do |t|
     t.integer "inventory_unit_id", null: false
     t.string "reason"
@@ -1202,6 +1232,12 @@ ActiveRecord::Schema.define(version: 2019_05_25_004754) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id", "payment_source_id", "payment_source_type"], name: "index_spree_wallet_payment_sources_on_source_and_user", unique: true
     t.index ["user_id"], name: "index_spree_wallet_payment_sources_on_user_id"
+  end
+
+  create_table "spree_works", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "spree_zone_members", id: :serial, force: :cascade do |t|
