@@ -5,6 +5,7 @@
 // the compiled file.
 //
 //= require jquery
+//= require bootstrap-sprockets
 //= require jquery_ujs
 //= require spree
 //= require rails-ujs

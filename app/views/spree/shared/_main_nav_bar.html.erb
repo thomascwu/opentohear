@@ -1,17 +1,22 @@
+<div class="topnav" id="myTopnav">
 <nav class="columns sixteen">
   <ul id="main-nav-bar" class="inline" data-hook>
     <li id="home-link" data-hook><%= link_to "Home", spree.root_path %></li>
     <li id="about-link" data-hook><%= link_to "About", '/spree/abouts#index'  %></li>
-    <li id="tests-link" data-hook><%= link_to "Hearing Test", '/spree/tests#index' %></li>
-    <li id="solutions-link" data-hook><%= link_to "Hearing Aid Solutions", '/spree/solutions#index' %></li>
-    <li id="works-link" data-hook><%= link_to "How it works", '/spree/works#index' %></li>
-    <li id="contacts-link" data-hook><%= link_to "Contact us", '/spree/contacts#index' %></li>
+    <li id="tests-link" data-hook><%= link_to "Test", '/spree/tests#index' %></li>
+    <li id="solutions-link" data-hook><%= link_to "Solutions", '/spree/solutions#index' %></li>
+    <li id="works-link" data-hook><%= link_to "Works", '/spree/works#index' %></li>
+    <li id="contacts-link" data-hook><%= link_to "Contact", '/spree/contacts#index' %></li>
     <li id="link-to-cart" data-hook>
       <noscript>
         <%= link_to t('spree.cart'), spree.cart_path %>
       </noscript>
       &nbsp;
     </li>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
   </ul>
   <script>Spree.fetch_cart('<%= j spree.cart_link_path %>')</script>
 </nav>
+</div>
