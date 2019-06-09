@@ -25,7 +25,10 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'solidus'
 gem 'solidus_auth_devise'
-gem 'bootstrap-sass'
+# gem 'bootstrap-sass'
+gem 'bootstrap-sass', '~> 3.4.1'
+gem 'sassc-rails', '>= 2.1.0'
+gem 'jquery-rails'
 gem 'font-awesome-rails'
 
 group :development, :test do
