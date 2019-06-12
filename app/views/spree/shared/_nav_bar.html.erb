@@ -1,13 +1,6 @@
-<nav id="top-nav-bar" class="columns six">
+<nav id="top-nav-bar" class="columns nine">
   <ul id="nav-bar" class="inline" data-hook>
     <%= render 'spree/shared/locale_selector' %>
     <%= render 'spree/shared/login_bar_items' %>
-    <li id="link-to-cart" data-hook>
-      <noscript>
-        <%= link_to t('spree.cart'), spree.cart_path %>
-      </noscript>
-      &nbsp;
-    </li>
   </ul>
-  <script>Spree.fetch_cart('<%= j spree.cart_link_path %>')</script>
 </nav>
