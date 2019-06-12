@@ -7,6 +7,7 @@
       <li id="solutions-link" data-hook><%= link_to "Hearing Solutions", '/spree/solutions#index' %></li>
       <li id="works-link" data-hook><%= link_to "How It Works", '/spree/works#index' %></li>
       <li id="contacts-link" data-hook><%= link_to "Contact Us", '/spree/contacts#index' %></li>
+      <li id="cart-link" data-hook><%= link_to "Cart", spree.cart_path %></li>
       <li id="link-to-cart" data-hook>
         <noscript>
           <%= link_to t('spree.cart'), spree.cart_path %>
