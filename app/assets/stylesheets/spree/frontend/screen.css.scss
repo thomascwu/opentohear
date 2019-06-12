@@ -300,6 +300,11 @@ nav#top-nav-bar {
   text-align: right;
   margin-top: 20px;
 
+  &#cart-link {
+    padding-left: 24px;
+    background: image-url("spree/frontend/cart.png") no-repeat left center;
+  }
+
   ul {
     li {
       margin-bottom: 5px;

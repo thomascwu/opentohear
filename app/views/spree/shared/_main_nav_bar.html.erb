@@ -7,11 +7,9 @@
       <li id="solutions-link" data-hook><%= link_to "Hearing Solutions", '/spree/solutions#index' %></li>
       <li id="works-link" data-hook><%= link_to "How It Works", '/spree/works#index' %></li>
       <li id="contacts-link" data-hook><%= link_to "Contact Us", '/spree/contacts#index' %></li>
-      <li id="cart-link" data-hook><%= link_to "Cart", spree.cart_path %></li>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars fa-2x"></i>
       </a>
     </ul>
-    <script>Spree.fetch_cart('<%= j spree.cart_link_path %>')</script>
   </nav>
 </div>

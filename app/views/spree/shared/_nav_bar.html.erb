@@ -2,5 +2,7 @@
   <ul id="nav-bar" class="inline" data-hook>
     <%= render 'spree/shared/locale_selector' %>
     <%= render 'spree/shared/login_bar_items' %>
+    <li id="cart-link" data-hook><%= link_to "Cart", spree.cart_path %></li>
   </ul>
+  <script>Spree.fetch_cart('<%= j spree.cart_link_path %>')</script>
 </nav>
